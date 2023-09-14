@@ -33,3 +33,16 @@ Before you begin, ensure you have the following prerequisites installed:
    ```bash
    git clone https://github.com/Johnnie-LC/phoneNumber-Book.git
    cd phone-book-app
+
+## TO LOCAL RUN
+   Use node v20.5.0
+   
+   install dependencies   
+```js
+   npm i
+```
+
+run locally  
+```js
+   npm run dev
+```
