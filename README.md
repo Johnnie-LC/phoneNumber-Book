@@ -9,8 +9,6 @@ This is a simple phone book application built using React. It allows users to ad
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 
