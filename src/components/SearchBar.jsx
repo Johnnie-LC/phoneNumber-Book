@@ -5,8 +5,6 @@ function SearchBar ({ contacts }) {
   const [searchResults, setSearchResults] = useState([])
 
   const handleSearch = () => {
-    // Implementa la lógica de búsqueda aquí
-    // Filtra los contactos cuyo firstName contiene el término de búsqueda
     const filteredContacts = contacts.filter((contact) =>
       contact.firstName.toLowerCase().includes(searchTerm.toLowerCase())
     )
@@ -14,18 +12,21 @@ function SearchBar ({ contacts }) {
   }
 
   return (
-    <div>
-      <input
-        type="text"
-        placeholder="Search by Name or Phone Number"
-        value={searchTerm}
-        onChange={(e) => setSearchTerm(e.target.value)}
-      />
-      <button onClick={handleSearch}>Search</button>
+    <div className='search-container'>
+      <div className='search-container-input'>
+        <input
+            type="text"
+            placeholder="Search by Name"
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+        />
+        <button onClick={handleSearch}>Search</button>
+      </div>
       <ul>
         {searchResults.map((result, index) => (
           <li key={index}>
-            {result.firstName} {result.lastName} - {result.phoneNumber}
+            <span>{result.firstName} {result.lastName}</span>
+            <span>{result.phoneNumber}</span>
           </li>
         ))}
       </ul>
