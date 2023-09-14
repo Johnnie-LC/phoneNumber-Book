@@ -1,8 +1,35 @@
-# React + Vite
+# Phone Book App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple phone book application built using React. It allows users to add, view, and search for contacts by their first name.
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Features](#features)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Features
+
+- Add new contacts with first name, last name, and phone number.
+- View a list of all added contacts.
+- Search for contacts by their first name.
+
+## Getting Started
+
+### Prerequisites
+
+Before you begin, ensure you have the following prerequisites installed:
+
+- Node.js and npm (Node Package Manager)
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your-username/phone-book-app.git
+   cd phone-book-app
