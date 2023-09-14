@@ -36,7 +36,7 @@ function App () {
     <div>
       <h1>phoneNumber Book App</h1>
       <ContactForm onAddContact={addContact} />
-      <SearchBar />
+      <SearchBar contacts={contacts}/>
       <ContactList contacts={contacts} />
     </div>
   )

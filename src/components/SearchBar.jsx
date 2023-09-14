@@ -1,11 +1,16 @@
 import React, { useState } from 'react'
 
-function SearchBar () {
+function SearchBar ({ contacts }) {
   const [searchTerm, setSearchTerm] = useState('')
   const [searchResults, setSearchResults] = useState([])
 
   const handleSearch = () => {
     // Implementa la lógica de búsqueda aquí
+    // Filtra los contactos cuyo firstName contiene el término de búsqueda
+    const filteredContacts = contacts.filter((contact) =>
+      contact.firstName.toLowerCase().includes(searchTerm.toLowerCase())
+    )
+    setSearchResults(filteredContacts)
   }
 
   return (
